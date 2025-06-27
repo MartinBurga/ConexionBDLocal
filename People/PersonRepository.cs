@@ -1,10 +1,12 @@
-﻿using People.Models;
+﻿using SQLite;
+using People.Models;
 
 namespace People;
 
 public class PersonRepository
 {
     string _dbPath;
+    private SQLiteConnection conn;
 
     public string StatusMessage { get; set; }
 
